@@ -1,4 +1,4 @@
-# C_Prog_Recap
+# C Programming Recap
 
 ### Introduction
 
