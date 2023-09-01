@@ -8,9 +8,9 @@ This repository aims to provide a comprehensive recap of essential concepts, tec
 
 The repository is organized into individual lessons, each focusing on specific concepts and techniques in C programming. You have the flexibility to follow the lessons in sequential order or jump between them based on your learning needs.
 
-If you're new to C programming or prefer a structured approach, it is recommended to start with Lesson 0 and progress through the lessons in numerical order. This will ensure a gradual and comprehensive understanding of the concepts.
+If you are new to C programming or prefer a structured approach, it is recommended to start with Lesson 0 and progress through the lessons in numerical order. This will ensure a gradual and comprehensive understanding of the concepts.
 
-If you're already familiar with certain concepts, feel free to revisit a specific lesson as a refresher.
+On the other hand, if you are already familiar with certain concepts, feel free to revisit a specific lesson as a refresher.
 
 ### Contents
 
