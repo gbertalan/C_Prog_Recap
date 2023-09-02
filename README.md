@@ -14,7 +14,7 @@ On the other hand, if you are already familiar with certain concepts, feel free 
 
 ### Contents
 
-- Lesson 0 - C vs Java
+- Lesson 0 - Compiling C Code
 - Lesson 1 - Variables
 - Lesson 2 - Functions
 - Lesson 3 - Control flow
