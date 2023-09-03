@@ -2,11 +2,11 @@
 
 ### Introduction
 
-This repository aims to provide a comprehensive recap of essential concepts, techniques, and best practices in C programming. It is designed to be a valuable resource for both beginners and experienced programmers. The contained files are all c files, organized into lessons.
+This repository aims to provide a comprehensive recap of essential concepts, techniques, and best practices in C programming. It is designed to be a valuable resource for both beginners and experienced programmers. The contained files are all .md files, organized into lessons.
 
 ### How to Use
 
-The .c files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on a .c file in your browser. (e.g. lesson0.c)
+The files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on an .md file in your browser. (e.g. lesson0.md)
 
 ### Navigating the Lessons
 
