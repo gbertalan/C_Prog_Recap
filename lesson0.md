@@ -1,3 +1,14 @@
+### Code Example
+
+```c
+#include <stdio.h>
+
+int main() {
+  printf("Hello, world!\n");
+  return 0;
+}
+```
+
 ### Basic compilation:
 gcc lesson0.c -o hello_world.out
 
@@ -18,11 +29,11 @@ E.g.:
 
 **gcc lesson0.c -pedantic -o hello_world.out**
 
-```c
-#include <stdio.h>
+### Option Order
 
-int main() {
-  printf("Hello, world!\n");
-  return 0;
-}
+In some cases the order of the options can matter. For example with the -O options:
+
+```
+gcc -O2 -O3 lesson0.c
+gcc -O3 -O2 lesson0.c
 ```
