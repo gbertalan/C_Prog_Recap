@@ -1,3 +1,5 @@
+# Compiling C Code
+
 ### Code Example
 
 ```c
