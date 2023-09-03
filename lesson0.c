@@ -1,16 +1,12 @@
-/* Basic compilation:
+## Basic compilation:
 
 gcc lesson0.c -o hello_world.out
 
-*/
-
-/* Run:
+## Run:
 
 ./hello_world.out
 
-*/
-
-/* Useful options:
+### Useful options:
 
 -Wall: This option enables all warnings. This is a good option to use because it will help you to find potential errors in your code.
 -Wextra: This option enables additional warnings that are not enabled by default. This is a good option to use if you are experienced with C and want to be extra careful.
@@ -24,11 +20,11 @@ E.g.:
 
 gcc lesson0.c -pedantic -o hello_world.out
 
-*/
-
+```c
 #include <stdio.h>
 
 int main() {
   printf("Hello, world!\n");
   return 0;
 }
+```
