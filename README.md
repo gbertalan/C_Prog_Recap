@@ -4,6 +4,10 @@
 
 This repository aims to provide a comprehensive recap of essential concepts, techniques, and best practices in C programming. It is designed to be a valuable resource for both beginners and experienced programmers. The contained files are all c files, organized into lessons.
 
+### How to Use
+
+The .c files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on a .c file in your browser. (e.g. lesson0.c)
+
 ### Navigating the Lessons
 
 The repository is organized into individual lessons, each focusing on specific concepts and techniques in C programming. You have the flexibility to follow the lessons in sequential order or jump between them based on your learning needs.
