@@ -1,22 +1,14 @@
 # C Programming Recap
 
-### Introduction
+## Introduction
 
 This repository aims to provide a comprehensive recap of essential concepts, techniques, and best practices in C programming. It is designed to be a valuable resource for both beginners and experienced programmers. The contained files are all .md files, organized into lessons.
 
-### How to Use
+## How to Use
 
 The files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on an .md file in your browser. (e.g. lesson0.md)
 
-### Navigating the Lessons
-
-The repository is organized into individual lessons, each focusing on specific concepts and techniques in C programming. You have the flexibility to follow the lessons in sequential order or jump between them based on your learning needs.
-
-If you are new to C programming or prefer a structured approach, it is recommended to start with Lesson 0 and progress through the lessons in numerical order. This will ensure a gradual and comprehensive understanding of the concepts.
-
-On the other hand, if you are already familiar with certain concepts, feel free to revisit a specific lesson as a refresher.
-
-### Contents
+## Contents
 
 - Lesson 0 - Compiling C Code
 - Lesson 1 - Variables
@@ -32,6 +24,20 @@ On the other hand, if you are already familiar with certain concepts, feel free 
 - Lesson 11 - Basic I/O
 - Lesson 12 - Complex Data Structures
 
-### License
+## Navigating the Lessons
+
+The repository is organized into individual lessons, each focusing on specific concepts and techniques in C programming. You have the flexibility to follow the lessons in sequential order or jump between them based on your learning needs.
+
+If you are new to C programming or prefer a structured approach, it is recommended to start with Lesson 0 and progress through the lessons in numerical order. This will ensure a gradual and comprehensive understanding of the concepts. When you encounter something that you are not familiar with, you need to look it up elsewhere on the internet, as this project is primarily a recap, not a tutorial, and information is kept short.
+
+On the other hand, if you are already familiar with certain concepts, feel free to revisit a specific lesson as a refresher.
+
+## How to Contribute
+
+You are free to contribute to this project. However keep in mind that this is intended to be just a *recap*, not a comprehensive C tutorial, so only put in what you think is essential. Specific details don't need to be included here, those can be looked up by the users elsewhere. (As an example, notice how Lesson 0 does not elaborate on what -o stands for when compiling c code.)
+
+To contribute, fork this repository, make your changes, and create a pull request into the main branch of this original repository. Only work in md files, everthing else will be ignored. Make sure to maintain readability. Use code blocks for anything the user might want to copy to their clipboard. Apply syntax highlighting for code.
+
+## License
 
 This repository is licensed under the MIT License.
