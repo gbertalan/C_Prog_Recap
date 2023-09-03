@@ -10,10 +10,14 @@ int main() {
 ```
 
 ### Basic compilation:
-```gcc lesson0.c -o hello_world.out```
+```
+gcc lesson0.c -o hello_world.out
+```
 
 ### Run:
-```./hello_world.out```
+```
+./hello_world.out
+```
 
 ### Useful options:
 
@@ -27,7 +31,9 @@ int main() {
 
 E.g.:
 
-```gcc lesson0.c -pedantic -o hello_world.out```
+```
+gcc lesson0.c -pedantic -o hello_world.out
+```
 
 ### Option Order
 
