@@ -1,6 +1,6 @@
 # Compiling C Code
 
----
+<br>
 
 <br>
 
@@ -19,7 +19,7 @@ int main() {
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -30,7 +30,7 @@ gcc lesson0.c -o hello_world.out
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -41,7 +41,7 @@ gcc lesson0.c -o hello_world.out
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -55,7 +55,7 @@ When *header files* are used, those don't need to be included in the compilation
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -77,7 +77,7 @@ gcc lesson0.c -pedantic -o hello_world.out
 
 <br>
 
----
+<br>
 
 <br>
 
