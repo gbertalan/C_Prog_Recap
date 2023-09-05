@@ -15,6 +15,45 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 
 <br>
 
+### The ```const``` qualifier
+
+<blockquote>
+
+When a variable is declared as ```const```, any attempt to modify its value will result in a compilation error.
+
+You can define your own constants, or you can use predifined constants, such as INT_MAX:
+
+```c
+#include <stdio.h>
+#include <limits.h>
+
+int main()
+{
+    const int just_a_number = 47;
+    int max_value = INT_MAX;
+    printf("The maximum value of an int is: %d\n", max_value);
+    printf("max_value - just_a_number = %d\n", max_value - just_a_number);
+    printf("max_value + just_a_number = %d\n", max_value + just_a_number); // overflow
+    /*
+    just_a_number = just_a_number + 1; // error: assignment of read-only variable ‘just_a_number’
+    */
+    return 0;
+}
+```
+
+Output:
+```
+The maximum value of an int is: 2147483647
+max_value - just_a_number = 2147483600
+max_value + just_a_number = -2147483602
+```
+
+The code above also demonstrates ***overflow*** of a variable. Overflow refers to a situation where a value exceeds the maximum representable value for its data type. It can occur in both positive and negative directions.
+
+</blockquote>
+
+<br>
+
 ### Declaration, Definition, Initialization
 
 <blockquote>
