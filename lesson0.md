@@ -1,5 +1,7 @@
 # Compiling C Code
 
+---
+
 ### Code Example
 
 <h5 a><strong><code>lesson0.c:</code></strong></h5>
@@ -13,15 +15,21 @@ int main() {
 }
 ```
 
+---
+
 ### Basic Compilation:
 ```
 gcc lesson0.c -o hello_world.out
 ```
 
+---
+
 ### Run:
 ```
 ./hello_world.out
 ```
+
+---
 
 ### Compiling Multiple Files:
 
@@ -30,6 +38,8 @@ gcc main.c main2.c main3.c -o output_file.out
 ```
 
 When *header files* are used, those don't need to be included in the compilation command, those are included inside the c source files via the **#include** *preprocessor directive*.
+
+---
 
 ### Useful Options:
 
@@ -47,6 +57,8 @@ E.g.:
 gcc lesson0.c -pedantic -o hello_world.out
 ```
 
+---
+
 ### Option Order
 
 In some cases the order of the options can matter. For example with the -O options:
@@ -55,3 +67,5 @@ In some cases the order of the options can matter. For example with the -O optio
 gcc -O2 -O3 lesson0.c
 gcc -O3 -O2 lesson0.c
 ```
+
+---
