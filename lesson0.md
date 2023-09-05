@@ -59,9 +59,11 @@ When *header files* are used, those don't need to be included in the compilation
 
 <br>
 
-### Useful Options
+### Compilation Options
 
 <blockquote>
+
+#### Some useful options
 
 - **Wall**: This option enables all warnings. This is a good option to use because it will help you to find potential errors in your code.
 - **Wextra**: This option enables additional warnings that are not enabled by default. This is a good option to use if you are experienced with C and want to be extra careful.
@@ -77,13 +79,9 @@ E.g.:
 gcc lesson0.c -pedantic -o hello_world.out
 ```
 
-</blockquote>
-
 <br>
 
-### Option Order
-
-<blockquote>
+#### Option Order
 
 In some cases the order of the options can matter. For example with the -O options:
 
