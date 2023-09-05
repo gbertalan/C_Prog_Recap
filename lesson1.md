@@ -4,14 +4,20 @@
 
 ### Symbolic Constants
 
+<blockquote>
+
 ```
 #define PI 3.14
 ```
 The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic constants (typically placed in the header file) to avoid "magic numbers".
 
+</blockquote>
+
 <br>
 
 ### Declaration, Definition, Initialization
+
+<blockquote>
 
 **Declaration:** *type* and *name* of the variable
 
@@ -23,9 +29,13 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 int age = 18;
 ```
 
+</blockquote>
+
 <br>
 
 ### External and Global Variables
+
+<blockquote>
 
 An **external variable** is a variable that has been *declared but not defined*. It means it has no space allocated for it.
 ```
@@ -86,7 +96,6 @@ void do_something2() {
 ```c
 int x;
 ```
-</blockquote>
 
 <h5 a><strong><code>global.h:</code></strong></h5>
 
@@ -109,5 +118,7 @@ main3 says x is 42
 <br>
 
 Please note that the scope of variables should be as small as possible to avoid unnecessarily increasing code complexity. It means that you should try to avoid using external and global variables if you can.
+
+</blockquote>
 
 ---
