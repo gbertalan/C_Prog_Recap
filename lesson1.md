@@ -1,5 +1,7 @@
 # Variables
 
+---
+
 ### Symbolic Constants
 
 ```
@@ -103,3 +105,5 @@ main3 says x is 42
 ---
 
 Please note that the scope of variables should be as small as possible to avoid unnecessarily increasing code complexity. It means that you should try to avoid using external and global variables if you can.
+
+---
