@@ -1,28 +1,46 @@
 # Variables
 
 ---
+<br>
 
 ### Symbolic Constants
+
+<br>
 
 ```
 #define PI 3.14
 ```
 The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic constants (typically placed in the header file) to avoid "magic numbers".
 
+<br>
+
 ---
-### Declaration and Definition
+
+<br>
+
+### Declaration, Definition, Initialization
+
+<br>
 
 **Declaration:** *type* and *name* of the variable
 
 **Definition:** *space* in memory and *address* of that space, together with the *declaration*
 
+**Initialization:** assignment of an initial *value* to a variable
+
 ```
 int age = 18;
 ```
 
+<br>
+
 ---
+
+<br>
+
 ### External and Global Variables
-(Typically in header)
+
+<br>
 
 An **external variable** is a variable that has been *declared but not defined*. It means it has no space allocated for it.
 ```
