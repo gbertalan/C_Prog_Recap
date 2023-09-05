@@ -33,7 +33,62 @@ int age = 18;
 
 <br>
 
-### External and Global Variables
+### Local and Global Variables
+
+<blockquote>
+
+Follow the execution path, to see what is happening:
+
+<h5 a><strong><code>main.c:</code></strong></h5>
+
+```c
+#include <stdio.h>
+
+int x; // global variable
+
+void function()
+{
+    printf("print3: x is %d\n", x); // still 5.
+
+    {
+        x = 12;
+    }
+    printf("print4: x is %d\n", x); // 12.
+
+    x = 20;
+    printf("print5: x is %d\n", x); // 20.
+
+    int x; // local variable
+    printf("print6: x is %d\n", x); // garbage, because local variables are not automatically initialized.
+
+    x = x;
+    printf("print7: x is %d\n", x); // same garbage.
+
+    {
+        x = 12;
+    }
+    printf("print8: x is %d\n", x); // 12.
+
+    x = x + 1;
+    printf("print9: x is %d\n", x); // 13.
+}
+
+int main(int argc, char **argv)
+{
+    printf("print1: x is %d\n", x); // 0, because global variables are automatically initialized to 0.
+
+    x = x + 5;
+    printf("print2: x is %d\n", x); // 5.
+
+    function();
+
+    return 0;
+}
+```
+
+</blockquote>
+
+### External Variables
 
 <blockquote>
 
