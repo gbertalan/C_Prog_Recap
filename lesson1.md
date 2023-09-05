@@ -1,6 +1,6 @@
 # Variables
 
----
+<br>
 <br>
 
 ### Symbolic Constants
@@ -14,7 +14,7 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -34,7 +34,7 @@ int age = 18;
 
 <br>
 
----
+<br>
 
 <br>
 
@@ -47,7 +47,8 @@ An **external variable** is a variable that has been *declared but not defined*.
 extern int x;
 ```
 
----
+<br>
+
 External variables are useful when having multiple source files.
 
 It is recommended to place the external variables into a header file, if the variables are used in multiple files. Here I separate the global variables into a global.c file.
@@ -120,7 +121,7 @@ main2 says x is 150
 main3 says x is 42
 ```
 
----
+<br>
 
 Please note that the scope of variables should be as small as possible to avoid unnecessarily increasing code complexity. It means that you should try to avoid using external and global variables if you can.
 
