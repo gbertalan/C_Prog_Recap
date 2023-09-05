@@ -4,8 +4,6 @@
 
 ### Symbolic Constants
 
-<br>
-
 ```
 #define PI 3.14
 ```
@@ -14,8 +12,6 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 <br>
 
 ### Declaration, Definition, Initialization
-
-<br>
 
 **Declaration:** *type* and *name* of the variable
 
@@ -30,8 +26,6 @@ int age = 18;
 <br>
 
 ### External and Global Variables
-
-<br>
 
 An **external variable** is a variable that has been *declared but not defined*. It means it has no space allocated for it.
 ```
