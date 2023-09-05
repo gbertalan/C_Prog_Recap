@@ -38,6 +38,8 @@ You are free to contribute to this project. However keep in mind that this is in
 
 To contribute, fork this repository, make your changes, and create a pull request into the main branch of this original repository. Only work in md files, everthing else will be ignored. Make sure to maintain readability. Use code blocks for anything the user might want to copy to their clipboard. Apply syntax highlighting for code.
 
+Please follow the formatting conventions use in the lesson files. To know what these conventions are, inspect the lesson md files.
+
 ## License
 
 This repository is licensed under the MIT License.
