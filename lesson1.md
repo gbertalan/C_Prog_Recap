@@ -176,4 +176,45 @@ Please note that the scope of variables should be as small as possible to avoid 
 
 </blockquote>
 
+### Static Variables
+
+<blockquote>
+
+When a variable is declared as *static* inside a function, its value is preserved between function calls. This means that the variable is initialized only once, and subsequent calls to the function will use the updated value from the previous call.
+
+<h5 a><strong><code>main.c:</code></strong></h5>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int inc() {
+    static int x = 0;
+    x += 1;
+    return x;
+}
+
+int main(int argc, char* argv[]) {
+    printf("%d\n", inc());
+    printf("%d\n", inc());
+    printf("%d\n", inc());
+    printf("%d\n", inc());
+    
+    // x is not reachable in this scope, so this would not work:
+    // printf("%d\n", x);
+    return 0;
+}
+```
+
+Output:
+```
+1
+2
+3
+4
+```
+
+</blockquote>
+
 ---
