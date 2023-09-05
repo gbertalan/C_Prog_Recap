@@ -1,7 +1,6 @@
 # Variables
 
 <br>
-<br>
 
 ### Symbolic Constants
 
@@ -11,10 +10,6 @@
 #define PI 3.14
 ```
 The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic constants (typically placed in the header file) to avoid "magic numbers".
-
-<br>
-
-<br>
 
 <br>
 
@@ -31,10 +26,6 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 ```
 int age = 18;
 ```
-
-<br>
-
-<br>
 
 <br>
 
