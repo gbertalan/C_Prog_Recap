@@ -4,6 +4,8 @@
 
 ### Code Example
 
+<blockquote>
+
 <h5 a><strong><code>lesson0.c:</code></strong></h5>
 
 ```c
@@ -15,23 +17,37 @@ int main() {
 }
 ```
 
+</blockquote>
+  
 <br>
 
-### Basic Compilation:
+### Basic Compilation
+
+<blockquote>
+
 ```
 gcc lesson0.c -o hello_world.out
 ```
 
+</blockquote>
+
 <br>
 
-### Run:
+### Run
+
+<blockquote>
+
 ```
 ./hello_world.out
 ```
 
+</blockquote>
+
 <br>
 
-### Compiling Multiple Files:
+### Compiling Multiple Files
+
+<blockquote>
 
 ```
 gcc main.c main2.c main3.c -o output_file.out
@@ -39,9 +55,13 @@ gcc main.c main2.c main3.c -o output_file.out
 
 When *header files* are used, those don't need to be included in the compilation command, those are included inside the c source files via the **#include** *preprocessor directive*.
 
+</blockquote>
+
 <br>
 
-### Useful Options:
+### Useful Options
+
+<blockquote>
 
 - **Wall**: This option enables all warnings. This is a good option to use because it will help you to find potential errors in your code.
 - **Wextra**: This option enables additional warnings that are not enabled by default. This is a good option to use if you are experienced with C and want to be extra careful.
@@ -57,9 +77,13 @@ E.g.:
 gcc lesson0.c -pedantic -o hello_world.out
 ```
 
+</blockquote>
+
 <br>
 
 ### Option Order
+
+<blockquote>
 
 In some cases the order of the options can matter. For example with the -O options:
 
@@ -67,5 +91,7 @@ In some cases the order of the options can matter. For example with the -O optio
 gcc -O2 -O3 lesson0.c
 gcc -O3 -O2 lesson0.c
 ```
+
+</blockquote>
 
 ---
