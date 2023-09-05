@@ -30,35 +30,11 @@ extern int x;
 ---
 External variables are useful when having multiple source files.
 
-```c main.c
-#include <stdio.h>
-#include <stdlib.h>
+It is recommended to place the external variables into a header file, if the variables are used in multiple files. Here I separate the global variables into a global.c file.
 
-int x;
-void doSomething();
+<h5 a><strong><code>main.c:</code></strong></h5>
 
-int main(int argc, char* argv[]) {
-    x = 100;
-    printf(" main says x is %d\n", x);
-    doSomething();
-    return 0;
-}
-```
-
-```c main2.c
-#include <stdio.h>
-
-extern int x;
-
-void doSomething() {
-    x = 150;
-    printf("main2 says x is %d\n", x);
-}
-```
----
-It is recommended to place the external variables into a header file, if the variables are used in multiple files. Here are separate the global variables into a global.c file.
-
-```c main.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include "global.h"
@@ -75,7 +51,9 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-```c main2.c
+<h5 a><strong><code>main2.c:</code></strong></h5>
+
+```c
 #include <stdio.h>
 #include "global.h"
 
@@ -85,7 +63,9 @@ void do_something() {
 }
 ```
 
-```c main3.c
+<h5 a><strong><code>main3.c:</code></strong></h5>
+
+```c
 #include <stdio.h>
 #include "global.h"
 
@@ -95,11 +75,16 @@ void do_something2() {
 }
 ```
 
-```c global.c
+<h5 a><strong><code>global.c:</code></strong></h5>
+
+```c
 int x;
 ```
+</blockquote>
 
-```c global.h
+<h5 a><strong><code>global.h:</code></strong></h5>
+
+```c
 extern int x;
 ```
 
@@ -114,3 +99,7 @@ Output:
 main2 says x is 150
 main3 says x is 42
 ```
+
+---
+
+Please note that the scope of variables should be as small as possible to avoid unnecessarily increasing code complexity. It means that you should try to avoid using external and global variables if you can.
