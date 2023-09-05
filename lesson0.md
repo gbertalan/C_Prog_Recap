@@ -2,8 +2,6 @@
 
 <br>
 
-<br>
-
 ### Code Example
 
 <h5 a><strong><code>lesson0.c:</code></strong></h5>
@@ -19,18 +17,10 @@ int main() {
 
 <br>
 
-<br>
-
-<br>
-
 ### Basic Compilation:
 ```
 gcc lesson0.c -o hello_world.out
 ```
-
-<br>
-
-<br>
 
 <br>
 
@@ -41,10 +31,6 @@ gcc lesson0.c -o hello_world.out
 
 <br>
 
-<br>
-
-<br>
-
 ### Compiling Multiple Files:
 
 ```
@@ -52,10 +38,6 @@ gcc main.c main2.c main3.c -o output_file.out
 ```
 
 When *header files* are used, those don't need to be included in the compilation command, those are included inside the c source files via the **#include** *preprocessor directive*.
-
-<br>
-
-<br>
 
 <br>
 
@@ -74,10 +56,6 @@ E.g.:
 ```
 gcc lesson0.c -pedantic -o hello_world.out
 ```
-
-<br>
-
-<br>
 
 <br>
 
