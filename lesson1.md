@@ -15,7 +15,7 @@ The word PI will be replaced by 3.14 everywhere in the source file. Use symbolic
 
 <br>
 
-### The ```const``` qualifier
+### The ```const``` Qualifier for Variables
 
 <blockquote>
 
