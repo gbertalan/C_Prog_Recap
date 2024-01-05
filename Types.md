@@ -2,7 +2,7 @@
 
 <br>
 
-### typedef
+### The `typedef` Keyword
 
 <blockquote>
 
