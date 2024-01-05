@@ -36,7 +36,7 @@ On the other hand, if you are already familiar with certain concepts, feel free 
 
 You are free to contribute to this project. However, keep in mind that this is intended to be just a *recap*, not a comprehensive C tutorial, so only put in what you think is essential. Specific details don't need to be included here, those can be looked up by the readers elsewhere. (As an example, notice how Lesson 0 does not elaborate on what -o stands for when compiling c code.)
 
-To contribute, fork this repository, make your changes, and create a pull request into the main branch of this original repository. Only work in md files, everything else will be ignored. Make sure to maintain readability. Use code blocks for anything the reader might want to copy to their clipboard. Apply syntax highlighting for code.
+To contribute, fork this repository, make your changes, and create a pull request into the main branch of this original repository. You can push directly into the *main* branch. Only work in md files, everything else will be ignored. Make sure to maintain readability. Use code blocks for anything the reader might want to copy to their clipboard. Apply syntax highlighting for code. Do not forget to update the CONTENT.md file and the Contents section in README.md.
 
 Please follow the formatting conventions used in the lesson files. To know what these conventions are, inspect the lesson md files.
 
