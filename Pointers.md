@@ -2,19 +2,259 @@
 
 <br>
 
-### Code Example
+### Memory Address
 
 <blockquote>
 
-<h5 a><strong><code>lesson0.c:</code></strong></h5>
+```c
+int myAge = 43; // an int variable
+
+printf("%d", myAge);  // Outputs the value of myAge (43)
+printf("%p", &myAge); // Outputs the memory address of myAge (0x7ffe5367e044)
+```
+
+</blockquote>
+  
+<br>
+
+### The Pointer Variable
+
+<blockquote>
+
+```c
+int myAge = 43;     // An int variable
+int* ptr = &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge
+
+// Output the value of myAge (43)
+printf("%d\n", myAge);
+
+// Output the memory address of myAge (0x7ffe5367e044)
+printf("%p\n", &myAge);
+
+// Output the memory address of myAge with the pointer (0x7ffe5367e044)
+printf("%p\n", ptr);
+```
+
+</blockquote>
+  
+<br>
+
+### Dereferencing
+
+<blockquote>
+
+```c
+int myAge = 43;     // Variable declaration
+int* ptr = &myAge;  // Pointer declaration
+
+// Reference: Output the memory address of myAge with the pointer (0x7ffe5367e044)
+printf("%p\n", ptr);
+
+// Dereference: Output the value of myAge with the pointer (43)
+printf("%d\n", *ptr);
+```
+
+</blockquote>
+  
+<br>
+
+### Arrays and Pointers
+
+<blockquote>
+
+```c
+int myNumbers[4] = {25, 50, 75, 100};
+
+// Get the memory address of the myNumbers array
+printf("%p\n", myNumbers);
+
+// Get the memory address of the first array element
+printf("%p\n", &myNumbers[0]);
+
+// Get the value of the first element in myNumbers
+printf("%d", *myNumbers);
+
+// Get the value of the second element in myNumbers
+printf("%d\n", *(myNumbers + 1));
+
+// Get the value of the third element in myNumbers
+printf("%d", *(myNumbers + 2));
+
+// and so on..
+
+// Change the value of the first element to 13
+*myNumbers = 13;
+
+// Change the value of the second element to 17
+*(myNumbers +1) = 17;
+```
+
+Iterating over an array, in two ways:
 
 ```c
 #include <stdio.h>
 
 int main() {
-  printf("Hello, world!\n");
-  return 0;
+    int myNumbers[4] = {25, 50, 75, 100};
+    int length = sizeof(myNumbers) / sizeof(myNumbers[0]);
+
+    // Printing using for (i=0; i<len; i++)
+    for (int i = 0; i < length; i++) {
+        printf("%d ", myNumbers[i]);
+    }
+    printf("\n");
+
+    // Printing using for (p=ptr; p<=last; p++)
+    int *ptr = myNumbers; // Assign the base address of the array to the pointer
+    int *last = myNumbers + length - 1; // Calculate the address of the last element
+
+    for (int *p = ptr; p <= last; p++) {
+        printf("%d ", *p);
+    }
+    printf("\n");
+
+    return 0;
 }
+
+```
+
+</blockquote>
+  
+<br>
+
+### Pointer Casting
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+int main() {
+    int myInt = 10; // Declare an integer variable
+    double *doublePtr; // Declare a pointer to a double
+
+    doublePtr = (double*)&myInt; // Cast the address of myInt to a pointer to a double
+
+    printf("Value of myInt: %d\n", myInt);
+    printf("Value of *doublePtr: %f\n", *doublePtr);
+
+    return 0;
+}
+
+```
+
+We cast the address of myInt to a pointer to a double and assign it to doublePtr. It interprets the memory at that location as a double, even though it was originally an integer.
+
+</blockquote>
+  
+<br>
+
+### Pointer to a Pointer
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+int main() {
+    int var = 5; // Declare an integer variable
+    int *ptr = &var; // Declare a pointer to an integer and assign the address of var to it
+    int **pptr = &ptr; // Declare a pointer to a pointer and assign the address of ptr to it
+
+    printf("Value of var: %d\n", var);
+    printf("Value of *ptr: %d\n", *ptr);
+    printf("Value of **pptr: %d\n", **pptr);
+
+    return 0;
+}
+
+```
+
+</blockquote>
+  
+<br>
+
+### Base Pointer, Interior Pointer
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+typedef struct {
+    int x;
+    char c;
+    float f;
+} MyStruct;
+
+int main() {
+    MyStruct s = {10, 'A', 3.14}; // Declare a structure variable
+    MyStruct *basePtr = &s; // Base pointer pointing to the beginning of the structure
+    char *interiorPtr = &s.c; // Interior pointer pointing to the 'c' member of the structure
+
+    printf("Value of x using base pointer: %d\n", basePtr->x);
+    printf("Value of c using interior pointer: %c\n", *interiorPtr);
+
+    return 0;
+}
+```
+
+</blockquote>
+  
+<br>
+
+### Function Pointer
+
+<blockquote>
+
+In C, a function pointer is a pointer that points to a function instead of pointing to a data value. This allows you to pass functions as arguments to other functions, return functions from functions, and store functions in data structures. Function pointers are particularly useful for implementing callbacks, event handling, and implementing polymorphism in C.
+
+```c
+#include <stdio.h>
+
+// Define a function that takes two integers as arguments and returns their sum
+int add(int a, int b) {
+    return a + b;
+}
+
+// Define a function that takes two integers as arguments and returns their difference
+int subtract(int a, int b) {
+    return a - b;
+}
+
+int main() {
+    // Declare a function pointer that takes two integers as arguments and returns an integer
+    int (*operation)(int, int);
+
+    // Assign the address of the add function to the function pointer
+    operation = &add;
+
+    // Use the function pointer to call the add function
+    int result = operation(5, 3);
+    printf("Result of addition: %d\n", result);
+
+    // Assign the address of the subtract function to the function pointer
+    operation = &subtract;
+
+    // Use the function pointer to call the subtract function
+    result = operation(5, 3);
+    printf("Result of subtraction: %d\n", result);
+
+    return 0;
+}
+```
+
+</blockquote>
+  
+<br>
+
+### Pointer Casting
+
+<blockquote>
+
+```c
+
+
 ```
 
 </blockquote>
