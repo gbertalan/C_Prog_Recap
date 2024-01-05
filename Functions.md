@@ -85,5 +85,44 @@ int main() {
   
 <br>
 
+### Variadic Functions
+
+<blockquote>
+
+A variadic function in C is a function that can accept a variable number of arguments.
+
+<h5 a><strong><code>main.c:</code></strong></h5>
+
+```c
+#include <stdio.h>
+#include <stdarg.h>
+
+void printNumbers(int num, ...) {
+    va_list args; // Declare a va_list to hold the variable arguments
+    va_start(args, num); // Initialize the va_list to point to the first variable argument
+    for (int i = 0; i < num; i++) { // Iterate through the variable arguments
+        int value = va_arg(args, int); // Retrieve the next argument from the va_list
+        printf("%d ", value); // Print the value
+    }
+    va_end(args); // Clean up the va_list
+    printf("\n"); // Print a newline
+}
+
+int main() {
+    printNumbers(3, 10, 20, 30); // Calling the variadic function
+    printNumbers(5, 1, 2, 3, 4, 5); // Another example
+    return 0;
+}
+
+
+
+```
+
+In this example, the printNumbers function takes an integer num followed by a variable number of integer arguments. Inside the function, the va_list, va_start, va_arg, and va_end macros from the <stdarg.h> header are used to iterate through the variable arguments and process them.
+
+</blockquote>
+  
+<br>
+
 
 ---
