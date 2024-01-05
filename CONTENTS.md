@@ -1,9 +1,10 @@
 # Contents
 
 ## Compiling C Code
+## Header Files
 ## Variables
 ## Functions
-## Control flow
+## Control Flow
 ## Operators
 ## Types
 ## Pointers
