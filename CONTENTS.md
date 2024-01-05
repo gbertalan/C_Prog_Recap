@@ -10,6 +10,7 @@
 ## &nbsp;&nbsp;&nbsp;&nbsp; Types
 ## &nbsp;&nbsp;&nbsp;&nbsp; Arrays
 ## &nbsp;&nbsp;&nbsp;&nbsp; Pointers
+## &nbsp;&nbsp;&nbsp;&nbsp; Memory Management
 ## &nbsp;&nbsp;&nbsp;&nbsp; Strings
 ## &nbsp;&nbsp;&nbsp;&nbsp; Function Argument Passing
 ## &nbsp;&nbsp;&nbsp;&nbsp; Returning Pointers
