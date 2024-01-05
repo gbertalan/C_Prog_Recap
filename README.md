@@ -17,8 +17,9 @@ The files have been annotated with markdown-style formatting. For the best exper
 - Control flow
 - Operators
 - Types
-- Pointers
 - Arrays
+- Pointers
+- Memory Management
 - Strings
 - Function Argument Passing
 - Returning Pointers
