@@ -7,10 +7,10 @@
 <blockquote>
 
 ```c
-if (done) {
-    exit(1);
+if (x > y) {
+    printf("x is greater than y\n");
 } else {
-    continue;
+    printf("y is greater than or equal to x\n");
 }
 
 int max = x > y ? x : y;
