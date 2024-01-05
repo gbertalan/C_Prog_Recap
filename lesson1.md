@@ -256,4 +256,12 @@ Output:
 
 </blockquote>
 
+### Dynamically Allocated Variables
+
+<blockquote>
+
+Explicitly allocated variables via *malloc/free* are discussed in subsequent lessons (about *pointers* and *arrays*).
+
+</blockquote>
+
 ---
