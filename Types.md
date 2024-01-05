@@ -2,19 +2,229 @@
 
 <br>
 
-### Code Example
+### typedef
 
 <blockquote>
 
-<h5 a><strong><code>lesson0.c:</code></strong></h5>
+The `typedef` keyword is used to create an alias for a data type.
+
+```c
+// Creating aliases for basic data types
+typedef int myInt;      // Alias for int
+typedef float myFloat;  // Alias for float
+
+// Creating an alias for a structure
+typedef struct {
+    int age;
+    char name[50];
+} Person;  // Alias for the struct with members age and name
+
+// Creating an alias for a pointer to int
+typedef int* IntPtr;  // Alias for int pointer
+
+
+```
+
+</blockquote>
+  
+<br>
+
+### Primitive Types
+
+<blockquote>
+
+- `char`: 1 byte, range: -128 to 127 or 0 to 255
+- `unsigned char`: 1 byte, range: 0 to 255
+- `signed char`: 1 byte, range: -128 to 127
+- `int`: 2 or 4 bytes, range: -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
+- `unsigned int`: 2 or 4 bytes, range: 0 to 65,535 or 0 to 4,294,967,295
+- `short`: 2 bytes, range: -32,768 to 32,767
+- `unsigned short`: 2 bytes, range: 0 to 65,535
+- `long`: 8 bytes or (4 bytes for 32-bit OS), range: -9223372036854775808 to 9223372036854775807
+- `unsigned long`: 8 bytes, range: 0 to 18446744073709551615
+- `float`: 4 bytes, range: 1.2E-38 to 3.4E+38, precision: 6 decimal places
+- `double`: 8 bytes, range: 2.3E-308 to 1.7E+308, precision: 15 decimal places
+- `long double`: 10 bytes, range: 3.4E-4932 to 1.1E+4932, precision: 19 decimal places
+
+It's important to note that the actual sizes of these types can vary on different platforms and architectures.
+
+</blockquote>
+  
+<br>
+
+### Array Types
+
+<blockquote>
 
 ```c
 #include <stdio.h>
 
+void arrayTypes() {
+    int nums[3] = {1, 2, 3};
+
+    printf("\nArray Types:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("nums[%d]: %d\n", i, nums[i]);
+    }
+}
+
+```
+
+</blockquote>
+  
+<br>
+
+### Struct Types
+
+<blockquote>
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+// Create a structure called myStructure
+struct myStructure {
+  int myNum;
+  char myLetter;
+  char myString[30]; // String
+};
+
 int main() {
-  printf("Hello, world!\n");
+  struct myStructure s1;
+
+  // Assign values to members of s1
+  s1.myNum = 13;
+  s1.myLetter = 'B';
+  // Assign a value to the string using the strcpy function
+  strcpy(s1.myString, "Some text");
+
+  // Print values
+  printf("My number: %d\n", s1.myNum);
+  printf("My letter: %c\n", s1.myLetter);
+  printf("My string: %s", s1.myString);
+
   return 0;
 }
+
+```
+
+</blockquote>
+  
+<br>
+
+### Type Casting
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+void typeCasting() {
+    float myFloat = 3.14;
+    int x = (int)myFloat;
+
+    printf("\nType Casting:\n");
+    printf("myFloat: %f, x: %d\n", myFloat, x);
+}
+
+```
+
+</blockquote>
+  
+<br>
+
+### Learning Type Sizes
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+void typeSizes() {
+    printf("\nLearning Type Sizes:\n");
+    printf("Size of int: %lu bytes\n", sizeof(int));
+    printf("Size of char: %lu bytes\n", sizeof(char));
+    printf("Size of float: %lu bytes\n", sizeof(float));
+    printf("Size of double: %lu bytes\n", sizeof(double));
+}
+
+```
+
+</blockquote>
+  
+<br>
+
+### Defining Complex Types
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+typedef struct {
+    int n;
+    char c;
+} record_t;
+
+void complexTypes() {
+    record_t records[2] = {{1, 'A'}, {2, 'B'}};
+
+    printf("\nDefining Complex Types:\n");
+    for (int i = 0; i < 2; i++) {
+        printf("records[%d]: %d, %c\n", i, records[i].n, records[i].c);
+    }
+}
+
+
+```
+
+</blockquote>
+  
+<br>
+
+### Unions
+
+<blockquote>
+
+A union is a special data type that allows you to store different data types in the same memory location. When you declare a union, all of its members share the same memory space, and the union's size is determined by the largest member within it.
+
+```c
+#include <stdio.h>
+
+void unions() {
+    union myUnion {
+        int x;
+        float y;
+    } u;
+
+    u.x = 10;
+    printf("\nUnions:\n");
+    printf("u.x: %d\n", u.x);
+    u.y = 3.14;
+    printf("u.y: %f\n", u.y);
+}
+
+```
+
+</blockquote>
+  
+<br>
+
+### Enums
+
+<blockquote>
+
+```c
+#include <stdio.h>
+
+void enums() {
+    enum day {MON, TUE, WED, THU, FRI, SAT, SUN};
+    enum day today = WED;
+
+    printf("\nEnums:\n");
+    printf("Today is day %d\n", today);
+}
+
 ```
 
 </blockquote>
