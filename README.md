@@ -10,21 +10,21 @@ The files have been annotated with markdown-style formatting. For the best exper
 
 ## Contents
 
-- 1. Compiling C Code
-- 2. Header Files
-- 3. Variables
-- 4. Functions
-- 5. Control flow
-- 6. Operators
-- 7. Types
-- 8. Arrays
-- 9. Pointers
-- 10. Memory Management
-- 11. Strings
-- 12. Function Argument Passing
-- 13. Returning Pointers
-- 14. Basic I/O
-- 15. Complex Data Structures
+1. Compiling C Code
+2. Header Files
+3. Variables
+4. Functions
+5. Control flow
+6. Operators
+7. Types
+8. Arrays
+9. Pointers
+10. Memory Management
+11. Strings
+12. Function Argument Passing
+13. Returning Pointers
+14. Basic I/O
+15. Complex Data Structures
 
 ## Navigating the Lessons
 
