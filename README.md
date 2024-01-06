@@ -6,7 +6,7 @@ This repository aims to provide a comprehensive recap of essential concepts, tec
 
 ## How to Use
 
-The files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on an .md file in your browser. (e.g. lesson0.md)
+The files have been annotated with markdown-style formatting. For the best experience, do not clone the repository, simply just click on an .md file in your browser. (e.g. Pointers.md)
 
 ## Contents
 
