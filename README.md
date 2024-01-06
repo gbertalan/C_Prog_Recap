@@ -26,6 +26,111 @@ The files have been annotated with markdown-style formatting. For the best exper
 14. Basic I/O
 15. Complex Data Structures
 
+## Detailed Contents
+
+1. Compiling C Code
+   - "Hello, world!"
+   - Basic Compilation
+   - Running Your Program
+   - Compiling Multiple Files
+   - Compilation Options
+
+2. Header Files
+   - Header Files
+   - Header File with Function and Constant Declaration
+   - C File with Function Definition
+   - The Main Function
+   - Compilation
+
+3. Variables
+   - Symbolic Constants
+   - The const Qualifier for Variables
+   - Declaration, Definition, Initialization
+   - Local and Global Variables
+   - External Variables
+   - Static Variables
+   - Dynamically Allocated Variables
+
+4. Functions
+   - Declaration, Definition, Calling
+   - The const Qualifier with Functions
+   - Private Functions
+   - Macros As Functions
+   - Variadic Functions
+
+5. Control Flow
+   - Conditional Statements
+   - Loops
+   - Switch Statements
+
+6. Operators
+   - Assignment Operator
+   - Arithmetic Operators
+   - Relational Operators
+   - Logical Operators
+   - Bitwise Operators
+
+7. Types
+   - The typedef Keyword
+   - Primitive Types
+   - Array Types
+   - Struct Types
+   - Type Casting
+   - Learning Type Sizes
+   - Defining Complex Types
+   - Unions
+   - Enums
+
+8. Arrays
+   - Declaration
+   - Initialization
+   - Accessing Elements of an Array
+   - Iterating over an Array
+   - Multidimensional Arrays
+   - Dynamic Arrays
+
+9. Pointers
+   - Memory Address
+   - The Pointer Variable
+   - Dereferencing
+   - Arrays and Pointers
+   - Pointer Casting
+   - Pointer to a Pointer
+   - Base Pointer, Interior Pointer
+   - Function Pointer
+
+10. Memory Management
+    - Allocating Memory - malloc
+    - Allocating and Initializing Memory - calloc
+    - Resizing Allocated Memory - realloc
+    - Freeing Allocated Memory - free
+
+11. Strings
+    - Declaration
+    - Array vs Pointer Access
+    - Comparing Strings
+    - Common String Operations
+
+12. Function Argument Passing
+    - Passing by Value
+    - Passing by Reference
+    - Passing Arrays to Functions
+
+13. Returning Pointers
+    - Returning a pointer to an allocated character array
+    - Returning a pointer to a static variable
+    - Returning a pointer to a local variable
+
+14. Basic I/O
+    - Print to Standard Output
+    - Read from Standard Input
+    - String Formatting
+    - Writing to a File
+    - Reading from a File
+
+15. Complex Data Structures
+    - Linked List Implementation
+
 ## Navigating the Lessons
 
 The repository is organized into individual lessons, each focusing on specific concepts and techniques in C programming. You have the flexibility to follow the lessons in sequential order or jump between them based on your learning needs.
