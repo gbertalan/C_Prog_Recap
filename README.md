@@ -34,6 +34,7 @@ The files have been annotated with markdown-style formatting. For the best exper
    - Running Your Program
    - Compiling Multiple Files
    - Compilation Options
+   - Debugging
 
 2. Header Files
    - Header Files
