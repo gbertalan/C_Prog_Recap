@@ -132,13 +132,13 @@ switch (grade) {
 ### 6. Operators
 ```c
 int x = 5; // 101 in binary
-    int y = 3; // 011 in binary
-    int bitwise_not = ~x; // 11111111111111111111111111111010 in binary
-    int bitwise_and = x & y; // 1 in binary
-    int bitwise_or = x | y; // 111 in binary
-    int bitwise_xor = x ^ y; // 110 in binary
-    int left_shift = x << 1; // 1010 in binary (Left shift operation)
-    int right_shift = x >> 1; // 10 in binary (Right shift operation)
+int y = 3; // 011 in binary
+int bitwise_not = ~x; // 11111111111111111111111111111010 in binary
+int bitwise_and = x & y; // 1 in binary
+int bitwise_or = x | y; // 111 in binary
+int bitwise_xor = x ^ y; // 110 in binary
+int left_shift = x << 1; // 1010 in binary (Left shift operation)
+int right_shift = x >> 1; // 10 in binary (Right shift operation)
 ```
 ### 7. Types
 ```c
