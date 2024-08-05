@@ -145,7 +145,7 @@ int right_shift = x >> 1; // 10 in binary (Right shift operation)
 typedef int myInt;
 
 typedef struct {
-} MyStruct
+} MyStruct;
 
 typedef int* myIntPointer;
 ```
