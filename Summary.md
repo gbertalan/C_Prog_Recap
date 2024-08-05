@@ -27,7 +27,7 @@ gdb hello_world.out
 ```
 
 ```
-gcc input.c -S -o output.s
+gcc input.c -S -masm=att -o output.s
 ```
 
 ### 2. Header Files
